@@ -75,27 +75,29 @@ function setup() {
     }
   }
 
-  var b = new Boundary(width / 2, height - 115, width - 4 * spacing + 10, 10);
-  bounds.push(b);
-  for (var i = 2; i < cols - 1; i++) {
-    var x;
-    var h;
-    var w;
+  //var b = new Boundary(width / 2, height + 50, width - 4 * spacing + 10, 10);
+  //bounds.push(b);
 
-    if (i == 2 || i == cols - 2) {
-      h = height;
-      w = 10;
-      if (i == 2) x = i * spacing;
-      if (i == cols - 2) x = i * spacing;
-    } else {
-      x = i * spacing;
-      h = 32;
-      w = 10;
-    }
+  // for (var i = 2; i < cols - 1; i++) {
+  //  var x;
+  //  var h;
+  //  var w;
 
-    var y = height - 120 - h / 2;
+  //  if (i == 2 || i == cols - 2) {
+  //   h = height;
+  //  w = 10;
+  //  if (i == 2) x = i * spacing;
+  //  if (i == cols - 2) x = i * spacing;
+  //   } else {
+  //     x = i * spacing;
+  //     h = 32;
+  //     w = 10;
+  //   }
 
-    var b = new Boundary(x, y, w, h);
+  //    var y = height - 120 - h / 2;
+  //
+  {
+    var b = new Boundary(width / 2, height + 50, width - 4 * spacing + 10, 10);
     bounds.push(b);
 
     for (var i = 0; i < cols + -2; i++) {
