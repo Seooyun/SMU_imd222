@@ -123,6 +123,14 @@ function setup() {
   boundaries.push(new Boundary(200, 700, width, 50));
 }
 
+function mouseDragged() {
+  boxes.push(new Box(mouseX, mouseY, random(10, 15), random(10, 15)));
+}
+
+function mousePressed() {
+  circles.push(new Circle(mouseX, mouseY, random(5, 13)));
+}
+
 function draw() {
   background(250, 190, 200);
   Engine.update(engine);
