@@ -16,6 +16,7 @@
           width: 1600,
           height: 800,
           wireframes: false,
+          fill: (100, 200, 40),
         },
       });
 
@@ -39,10 +40,6 @@
       });
       render.mouse = mouse;
 
-      function mouseDragged() {
-        boxes.push(new Box(mouseX, mouseY, random(10, 15), random(10, 15)));
-      }
-
       let firing = false;
       Matter.Events.on(mouseConstraint, "enddrag", function (e) {
         if (e.body === ball) firing = true;
@@ -61,10 +58,10 @@
       });
 
       let stack = Matter.Composites.stack(
-        1100,
-        270,
+        900,
+        200,
         10,
-        10,
+        7,
         0,
         0,
         function (x, y) {

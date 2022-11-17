@@ -14,16 +14,21 @@ let rederer = Matter.Render.create({
 
 let ground = Matter.Bodies.rectangle(600, 400, 1200, 30, {
   isStatic: true,
+
   render: {
-    fillStyle: "brown",
+    fillStyle: "white",
   },
 });
 
-let groundbox = Matter.Bodies.rectangle(700, 200, 60, 30);
+function setup() {
+  background(0);
+}
+
+let groundbox = Matter.Bodies.rectangle(700, 300, 60, 30);
 
 let composite = Matter.Composites.pyramid(
   600,
-  300,
+  200,
   20,
   20,
   0,

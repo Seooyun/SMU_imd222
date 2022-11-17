@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      body {
+        transition: all 1.5s ease;
+      }
+    </style>
   </head>
   <body>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <select onchange="color(this.value)">
+      <option value="">color</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="red">Red</option>
+      <option value="pink">Pink</option>
+    </select>
+
+    <script>
+      function color(value) {
+        document.body.style.backgroundColor = value;
+      }
+    </script>
+
     <script src="matter.js"></script>
     <script src="main.js"></script>
     <script src="box.js"></script>
