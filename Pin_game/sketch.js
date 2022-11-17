@@ -95,7 +95,7 @@ function setup() {
   //   }
 
   //    var y = height - 120 - h / 2;
-  //
+
   {
     var b = new Boundary(width / 2, height + 50, width - 4 * spacing + 10, 10);
     bounds.push(b);
