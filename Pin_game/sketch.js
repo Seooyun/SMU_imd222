@@ -96,20 +96,6 @@ function setup() {
 
   //    var y = height - 120 - h / 2;
 
-  {
-    var b = new Boundary(width / 2, height + 50, width - 4 * spacing + 10, 10);
-    bounds.push(b);
-
-    for (var i = 0; i < cols + -2; i++) {
-      var x = i * spacing;
-      var h = 50;
-      var w = 10;
-      var y = height - h / 2;
-      var b = new Boundary(x, y, w, h);
-      boundaries.push(b);
-    }
-  }
-
   var options = {
     isStatic: true,
   };
