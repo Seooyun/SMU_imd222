@@ -159,7 +159,7 @@ verticals.forEach((row, rowIndex) => {
 });
 
 const goal = Bodies.rectangle(
-  width - unitLengthX / 4,
+  width - unitLengthX / 2,
   height - unitLengthY / 2,
   unitLengthX * 0.7,
   unitLengthY * 0.7,
