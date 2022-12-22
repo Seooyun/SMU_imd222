@@ -7,19 +7,19 @@ function setup() {
   let canvas = createCanvas(boundingRects.width, boundingRects.height);
   canvas.parent("p5Canvas");
 
-  for (let n = 0; n < 300; n++) {
-    r = 900;
+  for (let n = 0; n < 600; n++) {
+    r = 1000;
     theta = random() * TAU;
     particles.push(new makeParticle(r, theta));
   }
 }
 
-let howManyX = 30;
-let howManyY = 30;
+let howManyX = 60;
+let howManyY = 60;
 
 function draw() {
   background(0);
-  translate(200 + random(-2, 2) * hyperDrive, 300 + random(-2, 2) * hyperDrive);
+  translate(300 + random(-2, 2) * hyperDrive, 300 + random(-2, 2) * hyperDrive);
   stroke(255);
   strokeWeight(2);
 
@@ -42,7 +42,7 @@ function makeParticle(rad, ang) {
   this.t = random();
   this.step = 0.0025;
 
-  this.weight = random(5);
+  this.weight = random(10);
   this.transp = random(200, 255);
 
   this.leng = random(100);

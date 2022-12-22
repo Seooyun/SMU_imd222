@@ -76,8 +76,8 @@ function draw() {
 
 function makeFilter() {
   // noiseのフィルターをつくる
-  colorMode(HSB, 360, 100, 100, 100);
-  drawingContext.shadowColor = color(0, 0, 5, 95);
+  colorMode(HSB, 360, 200, 100, 200);
+  drawingContext.shadowColor = color(0, 0, 95, 95);
   overAllTexture = createGraphics(width, height);
   overAllTexture.loadPixels();
   for (var i = 0; i < width; i++) {
