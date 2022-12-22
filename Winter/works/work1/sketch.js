@@ -36,7 +36,6 @@ function setup() {
 
 function draw() {
   background(0);
-  //snow.push(new Snowflake());
 
   zOff += 0.1;
 

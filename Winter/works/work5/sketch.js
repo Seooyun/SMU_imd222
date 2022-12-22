@@ -75,7 +75,6 @@ function draw() {
 }
 
 function makeFilter() {
-  // noiseのフィルターをつくる
   colorMode(HSB, 360, 200, 100, 200);
   drawingContext.shadowColor = color(0, 0, 95, 95);
   overAllTexture = createGraphics(width, height);
@@ -90,10 +89,4 @@ function makeFilter() {
     }
   }
   overAllTexture.updatePixels();
-}
-
-function keyTyped() {
-  if (key === "s" || key === "S") {
-    saveCanvas("GENUARY 2022_0113_800*80", "png");
-  }
 }

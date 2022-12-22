@@ -24,7 +24,7 @@ function draw() {
     drawHexagon(0, 0, s);
 
     n = new_n;
-    fill(255); // change in function of n, add color?
+    fill(170, 220, 255);
     noStroke();
     divideHexagon(0, 0, s, n);
 

@@ -32,7 +32,7 @@ function setup() {
 
 function draw() {
   background(0);
-  //Blobクラスのメソッドを実行
+
   for (let i = 0; i < num; i++) {
     blob[i].move();
     blob[i].bounce();
