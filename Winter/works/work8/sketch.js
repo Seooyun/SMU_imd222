@@ -54,12 +54,12 @@ function setup() {
   canvas.parent("p5Canvas");
 
   colorMode(HSB, 255);
-  background(20);
+  background(90);
   objs.push(new Firework(width / 2, color(random(255), 50, 50)));
 }
 
 function draw() {
-  background(20, 20);
+  background(10, 10);
   for (let fw of objs) {
     fw.draw();
   }
